@@ -1,4 +1,4 @@
-import {css} from '@emotion/core';
+import {css} from '@emotion/react';
 import InterBlack from './assets/fonts/Inter-Black.ttf';
 import InterBold from './assets/fonts/Inter-Bold.ttf';
 import InterExtraBold from './assets/fonts/Inter-ExtraBold.ttf';

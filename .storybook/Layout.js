@@ -1,6 +1,6 @@
 import React from 'react';
 import '../src/style/main.css'
-import { Global } from '@emotion/core';
+import { Global } from '@emotion/react';
 import globalStyle from '../src/GlobalStyle'
 
 const Layout = ({ children }) => {

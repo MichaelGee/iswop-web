@@ -1,5 +1,6 @@
 import React from 'react'
-import tw, { styled, css } from 'twin.macro';
+import tw, {  css } from 'twin.macro';
+import styled from '@emotion/styled'
 import { keyframes} from '@emotion/react'
 
 
@@ -25,7 +26,7 @@ const TemplateButton = styled.button`
    color: transparent !important;
    pointer-events: none;
    position: relative;
-
+   outline: none;
    &::after {
      content: '';
      animation: ${rotate} 550ms infinite linear;

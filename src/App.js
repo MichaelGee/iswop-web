@@ -1,6 +1,6 @@
-import { Button } from './components/atoms/Button';
+
 import globalStyle from './GlobalStyle'
-import { Global } from '@emotion/core';
+import { Global } from '@emotion/react';
 
 function App() {
   return (

@@ -17,9 +17,12 @@ to {
 
 
 const TemplateButton = styled.button`
+
  ${tw`
  text-center text-xl font-medium rounded-md py-3 px-9
  `}
+ text-transform: uppercase;
+ font-weight: 400;
  ${({ loading }) =>
  loading &&
  css`
@@ -41,10 +44,12 @@ const TemplateButton = styled.button`
      top: calc(50% - (1.2em / 2));
    }
  `}
- ${({full})=>
- full &&
+ ${({large})=>
+ large &&
  css`
   width: 100%; 
+  font-size: 1.5rem;
+  padding: 1.8rem 2.5rem;
 `}
 `
 
@@ -52,25 +57,22 @@ const PrimaryButton = styled(TemplateButton)`
  ${tw`
   bg-blue-50 text-blue-500 hover:bg-blue-100 hover:text-blue-600 
  `}
- &:hover {
-    transform: scale(1.03);
-  }
+ 
 `
 
 
 const SecondaryButton = styled(TemplateButton)`
  ${tw`
+
  bg-gray-100 text-black 
  `}
- &:hover {
-    transform: scale(1.03);
-  }
+
 `
 
 export const Button = () => {
     return (
         <div>
-              <PrimaryButton login type="submit">Check avaliability</PrimaryButton>
+              <PrimaryButton  type="submit">Check avaliability</PrimaryButton>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { InputGroup } from "./Input";
 import {Radio} from './Radio';
+import {SearchBar} from './SearchBar'
 
 
 const Form = styled.form`
@@ -11,4 +12,5 @@ const Form = styled.form`
 
 Form.InputGroup = InputGroup;
 Form.Radio = Radio;
+Form.Searchbar = SearchBar;
 export {Form}

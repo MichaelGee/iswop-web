@@ -1,6 +1,6 @@
 module.exports = {
     twin: {
         preset: 'emotion',
-        config: './postcss.config.js',
+        config: './tailwind.config.js',
     }
 };

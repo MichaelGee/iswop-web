@@ -47,6 +47,8 @@ const Cancel = styled.div`
  box-sizing: border-box;
  margin: 0;
  padding: 0;
+ border-radius: 50%;
+ padding: 4px;
  position: absolute;
  right: 3px;
  top: 4px;

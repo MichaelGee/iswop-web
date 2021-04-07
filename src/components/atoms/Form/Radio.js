@@ -30,7 +30,7 @@ const Text = styled.p`
 export const Radio=()=> {
     return (
         <Wrapper>
-            <CheckBoxComponent checked />
+            <CheckBoxComponent checked/>
             <Text>Budweiser</Text>
         </Wrapper>
     )

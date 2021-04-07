@@ -5,7 +5,7 @@ import tw, {  css } from 'twin.macro';
 export const CheckBox = styled.div`
   align-items: center;
   border-radius: 50%;
-  border: 0.1rem solid gray;
+  border: 0.2rem solid gray;
   cursor: pointer;
   display: flex;
   height: 2rem;
@@ -26,6 +26,7 @@ export const CheckBox = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
     width: 1.1rem;
+  }
     ${({ checked }) =>
     checked &&
     css`
@@ -34,5 +35,4 @@ export const CheckBox = styled.div`
         opacity: 1;
       }
     `}
-  }
-  `
+  `;

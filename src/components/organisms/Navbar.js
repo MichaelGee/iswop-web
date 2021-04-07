@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import LogoIcon from '../../assets/logo.svg'
 import UilShoppingCart from '../../assets/icons/uil-shopping-cart';
 import { ProfileComponent } from './ProfileComponent';
+import { SearchBar } from '../atoms/Form/SearchBar';
 
 
 
@@ -26,14 +27,15 @@ const List = styled.ul`
 `
 const Links = styled.li`
  margin-right: 3rem;
- text-transform: caplitalize;
- font-size: 1.4rem;
- font-weight: 600;
+ text-transform: capitalize;
+ font-size: ${props => props.theme.font.size.small};
+ font-weight: ${props => props.theme.font.weight.medium};
  cursor: pointer;
 `
 const UserOption = styled.div`
  display: flex;
  align-items: center;
+ justify-content: space-between;
 `
 
 
@@ -51,7 +53,8 @@ export const Navbar = () => {
         
 
         <UserOption>
-         <UilShoppingCart height="1.5em" width="1.5em" style={{cursor: "pointer"}}/>
+          <SearchBar />
+         {/* <UilShoppingCart height="1.5em" width="1.5em" style={{cursor: "pointer", marginLeft: '1rem'}}/> */}
          <ProfileComponent/>
         </UserOption>
        </Container>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Modal } from '../components/organisms/Modal';
+import { Modal } from '../components/molecules/Modal';
 
 const stories = storiesOf('Modal', module);
 
